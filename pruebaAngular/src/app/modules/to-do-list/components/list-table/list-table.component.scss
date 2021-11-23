@@ -1,0 +1,12 @@
+:host ::ng-deep {
+  .table-container {
+    overflow: auto;
+    table {
+      width: 100%;
+    }
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+}

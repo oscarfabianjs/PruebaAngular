@@ -1,0 +1,43 @@
+<breadcrumbs [route]="''" [title]="'To Do List'"> </breadcrumbs>
+
+<form [formGroup]="toDoForm" novalidate>
+
+  <div class="center">
+    <div>
+      <mat-form-field
+        appearance="outline"
+        floatLabel="always"
+        class="w-30-p mr-8"
+        color="primary"
+      >
+        <mat-label>New Item</mat-label>
+        <input
+          matInput
+          type="text"
+          formControlName="description"
+          maxlength="50"
+          autocomplete="off"
+        />
+        <mat-error
+          *ngIf="toDoForm.controls['description'].hasError('required')"
+        >
+          El campo es requerido
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <button
+        type="button"
+        mat-raised-button
+        color="accent"
+        (click)="addItem()"
+        class="addButton"
+        [disabled]="toDoForm.invalid"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</form>
+
+<app-list-table></app-list-table>

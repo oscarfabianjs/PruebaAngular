@@ -1,0 +1,21 @@
+<div flex fxLayout="column" fxLayoutAlign="stretch stretch">
+  <div
+    flex
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+    class="px-24 py-20 breadcrumb"
+  >
+    <div flex fxLayout="column">
+      <div flex fxLayout="row" class="leftZone-container">
+        <div flex fxLayout="column" class="back-container">
+          <mat-icon class="page-icon-back" (click)="back()"
+            >arrow_back</mat-icon
+          >
+        </div>
+        <div flex fxLayout="column" class="ml-16">
+          <h2 class="page-title" [innerHTML]="title"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

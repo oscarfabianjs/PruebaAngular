@@ -1,0 +1,25 @@
+:host ::ng-deep{
+  div.breadcrumb {
+      background-color: #626C83 !important;
+      color: rgba(255,255,255,0.6) !important;
+  }
+
+  .back-container {
+      position: relative;
+      .page-icon-back {
+          position: absolute;
+          font-size: 24px;
+          height: 20px;
+          width: 20px;
+          min-height: 20px;
+          min-width: 20px;
+          color: #fff;
+          cursor: pointer;
+      }
+  }
+  .page-title{
+      color: #FFFFFF !important;
+      padding-left: 30px;
+  }
+
+}
